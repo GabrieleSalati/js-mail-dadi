@@ -18,7 +18,7 @@ send.addEventListener(
 
     console.log(email);
     
-    if (email == mailingList) {
+    if (mailingList.includes(email)) {
         message = "ACCESS GRANTED!"
     }
 
