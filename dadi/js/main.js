@@ -22,12 +22,18 @@ play.addEventListener(
         message = "PLAYER WINS!";
     }
 
-    else {
+    else if (playerNumber < computerNumber) {
         message = "COMPUTER WINS!";
+    }
+
+    else {
+        message = "EVEN!";
     }
 
     console.log(message);
 
+    document.getElementById("player").innerHTML = playerNumber;
+    document.getElementById("computer").innerHTML = computerNumber;
     document.getElementById("winner").innerHTML = message;
 }
 );
